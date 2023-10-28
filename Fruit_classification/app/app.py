@@ -28,9 +28,7 @@ def classify_image(image):
 
 def main():
     st.title("Fruit Image Classification")
-
-    st.sidebar.title("Upload an image of fruit")
-
+    st.write("This is a simple image classification web app to predict fruit name.")
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
     if uploaded_file is not None:
         image = remove_background(uploaded_file)
