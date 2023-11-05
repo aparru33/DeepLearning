@@ -1,0 +1,11 @@
+Load datasets
+train datasets loaded
+validation datasets loaded
+Get number of classes
+Create and compile the model
+Model created
+Train the model with 10
+Model trained
+Save the model
+Model saved
+Test Loss = 0.0004945967230014503Test Accuracy = 0.9998651742935181Test Precision = 0.9998651742935181Test Recall = 0.9998651742935181Test AUC = 1.0000001192092896
