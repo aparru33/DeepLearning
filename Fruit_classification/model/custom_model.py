@@ -1,34 +1,38 @@
-import tensorflow as tf
-from tensorflow.keras import layers, models
-from tensorflow.keras.preprocessing import image_dataset_from_directory
-from tensorflow.keras.metrics import Precision, Recall, AUC
+from keras.preprocessing import image_dataset_from_directory
+from keras.layers import Input, Conv2D, MaxPooling2D, Flatten, Dense, Dropout,BatchNormalization,Rescaling
+from keras.layers import LeakyReLU
+from keras import models
+from keras.metrics import Precision, Recall, AUC
+from keras.callbacks import EarlyStopping
 from sklearn.metrics import classification_report
+
+from datetime import datetime
 import numpy as np
 
 def create_model(input_shape, num_classes):
     model = models.Sequential()
 
     # Input Layer
-    model.add(layers.Input(shape=input_shape))
+    model.add(Input(shape=input_shape))
 
     # Normalization Layer
-    model.add(layers.Rescaling(1./255))
+    model.add(Rescaling(1./255))
 
     # First Convolutional Block
-    model.add(layers.Conv2D(32, (3, 3), activation='relu'))
-    model.add(layers.Conv2D(64, (3, 3), activation='relu'))
+    model.add(Conv2D(64, (3, 3), activation='relu'))
+    model.add(Conv2D(128, (3, 3), activation='relu'))
 
     # Max Pooling Layer
-    model.add(layers.MaxPooling2D(pool_size=(2, 2)))
+    model.add(MaxPooling2D(pool_size=(2, 2)))
 
     # Dropout Layer
-    model.add(layers.Dropout(0.25))
+    model.add(Dropout(0.25))
 
     # Flatten Layer
-    model.add(layers.Flatten())
+    model.add(Flatten())
 
     # Dense Layer
-    model.add(layers.Dense(num_classes, activation='softmax'))
+    model.add(Dense(num_classes, activation='softmax'))
 
     # Compile the Model
     model.compile(optimizer='adam', 
@@ -37,17 +41,54 @@ def create_model(input_shape, num_classes):
 
     return model
 
+
+
+def create_model_vg(_input_shape):
+    print("Create the vgg16 model \n")
+    vgg16_model = models.Sequential([
+        Conv2D(filters=32, kernel_size=(3,3), padding="same", activation="relu", input_shape=_input_shape),
+        Conv2D(filters=32, kernel_size=(3,3), padding="same", activation="relu"),
+        MaxPooling2D((2, 2)),
+        
+        Conv2D(filters=64, kernel_size=(3,3), padding="same", activation="relu"),
+        Conv2D(filters=64, kernel_size=(3,3), padding="same", activation="relu"),
+        MaxPooling2D((2, 2)),
+        
+        Conv2D(filters=128, kernel_size=(3,3), padding="same", activation="relu"),
+        Conv2D(filters=128, kernel_size=(3,3), padding="same", activation="relu"),
+        Conv2D(filters=128, kernel_size=(3,3), padding="same", activation="relu"),
+        MaxPooling2D((2, 2)),
+        
+        Conv2D(filters=356, kernel_size=(3,3), padding="same", activation="relu"),
+        Conv2D(filters=356, kernel_size=(3,3), padding="same", activation="relu"),
+        Conv2D(filters=356, kernel_size=(3,3), padding="same", activation="relu"),
+        MaxPooling2D((2, 2)),
+        
+        Conv2D(filters=356, kernel_size=(3,3), padding="same", activation="relu"),
+        Conv2D(filters=356, kernel_size=(3,3), padding="same", activation="relu"),
+        Conv2D(filters=356, kernel_size=(3,3), padding="same", activation="relu"),
+        MaxPooling2D((2, 2)),
+        
+        Flatten(),
+        Dense(1024),
+        LeakyReLU(alpha=0.01),
+        Dense(1024),
+        LeakyReLU(alpha=0.01),
+        Dense(num_classes, activation="softmax")  # For binary classification
+    ])
+
 # Set the path to your dataset
 TRAIN_DIR = '/home/ubuntu/workspace/finovox_main/dl_project/DeepLearning/Fruit_classification/dataset/train'
 VALIDATION_DIR = '/home/ubuntu/workspace/finovox_main/dl_project/DeepLearning/Fruit_classification/dataset/validation'
 
 # Bilinear, bicubic, lanczos5, mitchellcubic.
-INTERPOLATION = "bilinear"
+INTERPOLATION = "bicubic"
 
-# Load dataset
-batch_size = 32
-img_height = 64
-img_width = 64
+IMAGE_CHANNELS=3
+batch_size = 256
+img_height = 100
+img_width = 100
+
 
 try:
     log = open("/home/ubuntu/workspace/finovox_main/dl_project/DeepLearning/Fruit_classification/model/log.txt", "w")
@@ -60,7 +101,8 @@ try:
         seed=123,
         image_size=(img_height, img_width),
         batch_size=batch_size,
-        label_mode='categorical'
+        label_mode='categorical',
+        shuffle=True,
     )
     log.write("train datasets loaded\n")
     validation_dataset = image_dataset_from_directory(

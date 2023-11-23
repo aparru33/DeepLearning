@@ -15,7 +15,7 @@ from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_a
 
 # test (contains only image, no directory)
 
-directory = 'dataset/train/'
+directory = '/home/ubuntu/workspace/finovox_main/dl_project/DeepLearning/Fruit_classification/dataset/images/'
 directories = [d.name for d in os.scandir(directory) if d.is_dir()]
 
 # Create an ImageDataGenerator with augmentation settings
@@ -29,7 +29,6 @@ datagen = ImageDataGenerator(
     brightness_range=[0.8, 1.2],  # Randomly adjust brightness within a range
     rescale=1.0/255.0,        # Rescale pixel values to [0, 1] (if not already)
     horizontal_flip=True,    # Flip images horizontally
-    seed=42                  # Use the same seed for consistency
 )
 
 for d in directories:

@@ -4,7 +4,8 @@ from PIL import Image
 import shutil
 import random
 import pandas as pd
-import numpy as np
+import os
+
 #%%
 def move_files(_source_directory, _target_directory, percentage=0.47):
     _files = [f for f in os.listdir(_source_directory) if os.path.isfile(os.path.join(_source_directory, f))]
@@ -116,26 +117,6 @@ def get_all_files_in_directory(dir):
         for file in files:
             yield os.path.join(root, file)
 
-######################################################################################################
-# %%
-
-#%%
-move_n_files(
-    '/home/ubuntu/workspace/finovox_main/main-repo/backend/dataset/logo_classifier/other_copy/other/cropped_image',
-    '/home/ubuntu/workspace/finovox_main/main-repo/backend/dataset/logo_classifier/train/others',
-    100000)
-
-
-move_n_files(
-    '/home/ubuntu/workspace/finovox_main/main-repo/backend/dataset/logo_classifier/other_copy/other/cropped_image',
-    '/home/ubuntu/workspace/finovox_main/main-repo/backend/dataset/logo_classifier/test/others',
-    25000)
-
-
-# %%
-# find files that exist in both directories
-import os
-
 def common_files(dir1, dir2):
     # List all files in each directory
     files_dir1 = set(os.listdir(dir1))
@@ -145,38 +126,171 @@ def common_files(dir1, dir2):
     common = files_dir1.intersection(files_dir2)
     
     return common
+######################################################################################################
+# %%
+# first we get all the catgories in each directory
+PROJECT_PATH = '/home/ubuntu/workspace/finovox_main/dl_project/DeepLearning/Fruit_classification/'
+ZHANG_DATASET = PROJECT_PATH + "dataset/fruit_classification_zhang/"
+FRUIT_360_DATASET = PROJECT_PATH + "dataset/Fruits_360/"
+FRUITS_VEGETABLES_DATASET = PROJECT_PATH + "dataset/Fruits_and_Vegetables_Image_Recognition_Dataset/"
+IMAGES_DATASET = PROJECT_PATH + "dataset/images/"
+#%%
+# for d in os.listdir(IMAGES_DATASET):
+#     if not os.path.exists(PROJECT_PATH+'dataset/train/'+d):
+#         os.mkdir(PROJECT_PATH+'dataset/train/'+d)
+#     move_files(IMAGES_DATASET+d, PROJECT_PATH+'dataset/train/'+d, 0.8)
 
-dir1 = '/home/ubuntu/workspace/finovox_main/main-repo/backend/dataset/logo_classifier/test/logos'
-dir2 = '/home/ubuntu/workspace/finovox_main/main-repo/backend/dataset/logo_classifier/train/others'
+# #%%
+# for d in os.listdir(IMAGES_DATASET):
+#     if not os.path.exists(PROJECT_PATH+'dataset/test/'+d):
+#         os.mkdir(PROJECT_PATH+'dataset/test/'+d)
+#     move_files(IMAGES_DATASET+d, PROJECT_PATH+'dataset/test/'+d, 1)
 
-common = common_files(dir1, dir2)
-print(f"Common files between {dir1} and {dir2}:")
-n=1
-for filename in common:
-    if '.' in filename:
-        print(filename)
-        # if n<9:
-        #     os.remove(os.path.join(dir1, filename))
-        # else:
-        #     os.remove(os.path.join(dir2, filename))
-        # if n==10:
-        #     n=0
-        # n+=1
-#     #_path = os.path.join(dir1, filename)
-    # if '.' in filename:
-    #     os.remove(os.path.join(dir1, filename))
-# #     os.remove(os.path.join(dir2, filename))
+# #%%
+# for item in os.listdir(IMAGES_DATASET):
+#     item_path = os.path.join(IMAGES_DATASET, item)
+#     if os.path.isdir(item_path):
+#         new_name = item.split()[0]
+#         new_path = os.path.join(IMAGES_DATASET, new_name)
+#         os.rename(item_path, new_path)
+
+# #%%
+# cat = []
+# for i in [FRUIT_360_DATASET+'train', FRUIT_360_DATASET+'train',
+#           FRUITS_VEGETABLES_DATASET+'train', IMAGES_DATASET]:
+#     for j in os.listdir(i):
+#         if os.path.isdir(os.path.join(i,j)):
+#             cat.append({"dir" :i,"cat": j})
+
+# cat_by_folder = sorted(cat, key=lambda k: k['cat'])
+# cats = sorted(list({i['cat'] for i in cat_by_folder}))
+
+
+# #%%
+# import os
+
+# def rename_folders_Camel(_folder_path):
+#     for item in os.listdir(_folder_path):
+#         item_path = os.path.join(_folder_path, item)
+#         if os.path.isdir(item_path):
+#             new_name = item[0].upper() + item[1:]
+#             new_path = os.path.join(_folder_path, new_name)
+#             os.rename(item_path, new_path)
+
+# #%%
+# for f in os.listdir(FRUIT_360_DATASET + 'test'):
+#     if os.path.isdir(FRUIT_360_DATASET + 'test/'+f):
+#         for i in os.listdir(FRUIT_360_DATASET + 'test/'+f):
+#             file_name = i.split('.')[0]
+#             ext = i.split('.')[1]
+#             os.rename(FRUIT_360_DATASET + 'test/'+f+'/'+i,
+#                         FRUIT_360_DATASET + 'test/'+f+'/'+'360_'+ file_name +'.'+ext)
+# %%
+# # first word fruit having no multiple fruit in image
+# to_remove = [
+# 'Cactus',
+#  'Cantaloupe',
+#  'Carambula',
+#  'Galia',
+#  'Chestnut',
+#  'Granadilla',
+#  'Grapefruit',
+#  'Guava',
+#  'Huckleberry',
+#  'Kaki',
+#  'Kohlrabi',
+#  'Kumquats',
+#  'Limes',
+#  'Lychee',
+#  'Mangostan',
+#  'Maracuja',
+#  'Pepino',
+#  'Pepper',
+#  'Pepper',
+#  'Pepper',
+#  'Pepper',
+#  'Physalis',
+#  'Plum',
+#  'Potato Red',
+#  'Quince',
+#  'Rambutan',
+#  'Redcurrant',
+#  'Salak',
+#  'Tamarillo',
+#  'Tangelo',
+#  'Walnut',
+#  'Nut',
+#  'Cocos',
+#  'Peas',
+
+# ]
+# for d in os.listdir(PROJECT_PATH + "dataset/train"):
+#     if os.path.isdir(PROJECT_PATH + "dataset/train/"+d):
+#         if d.split()[0] in to_remove:
+#             shutil.rmtree(PROJECT_PATH + "dataset/train/"+d)
+
+
+#%%
+has_no_multiple= [
+ 'Blueberry',
+ 'Clementine',
+ 'Dates',
+ 'Fig',
+ 'Hazelnut',
+ 'Mandarine',
+ 'Peach',
+ 'Raspberry',]
+
+
+has_no_multiple_2= [
+ 'Apricot',
+ 'Avocado',]
+
+
+# Create an ImageDataGenerator with augmentation settings
+import numpy as np
+from tensorflow.keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
+datagen = ImageDataGenerator(
+    rotation_range=40,       # Randomly rotate images by up to 30 degrees
+    zoom_range=[1.0, 1.2],   # Zoom-out only by up to 20% as the training image have max zoom in
+    width_shift_range=0.02,  # Randomly shift images horizontally by up to 2%
+                                #we don't want to alter the shape too much 
+    height_shift_range=0.02, # Randomly shift images vertically by up to 2%
+    fill_mode='nearest',     # Fill mode for handling empty pixels
+    brightness_range=[0.8, 1.2],  # Randomly adjust brightness within a range
+    rescale=1.0/255.0,        # Rescale pixel values to [0, 1] (if not already)
+    horizontal_flip=True,    # Flip images horizontally
+)
+
+for s in ['train', 'test']:
+    for d in os.listdir(PROJECT_PATH + "dataset/"+s):
+        if os.path.isdir(PROJECT_PATH + "dataset/" +s +"/"+d):
+            if d.split()[0] not in has_no_multiple +has_no_multiple_2:
+                list_file = [PROJECT_PATH + "dataset/"+s+ "/"+d+"/"+f for f in os.listdir(PROJECT_PATH + "dataset/"+s+"/"+d)]
+                nb_file = len(list_file)
+                nb_to_generate = int((800-534)/nb_file) if s =='train' else int((200-134)/nb_file)
+                for image_file in list_file:
+                    img = load_img(image_file)
+                    x = img_to_array(img)
+                    x = np.expand_dims(x, axis=0)
+                    # Generate augmented images and save them
+                    i = 0
+                    for batch in datagen.flow(x, batch_size=1):
+                        augmented_image = array_to_img(batch[0])
+                        file_ext = image_file.split(".")[-1]
+                        augmented_image.save(os.path.join(PROJECT_PATH + "dataset/" +s+"/"+d, f'{image_file.split("/")[-1].split(".")[0]}_augmented_{i}.' + file_ext))
+                        i += 1
+                        if i >= nb_to_generate: 
+                            break
+
 
 # %%
-res = []
-PATH = '/home/ubuntu/workspace/finovox_main/dl_project/DeepLearning/Fruit_classification/dataset'
-for dir in os.listdir(PATH):
-    print(f'----- {dir} -----')
-    for d in os.listdir(f'{PATH}/{dir}'):
-        for ddir in os.listdir(f'{PATH}/{d}/{dir}'):
-            print(ddir)
-            di = {'dataset' : ddir, 'category' :ddir }
-            if di not in res:
-                res.append({'dataset' : ddir, 'category' :ddir })
-res= pd.DataFrame(res)
+
+for d in sorted(os.listdir(PROJECT_PATH + "dataset/test/")):
+    if os.path.isdir(PROJECT_PATH + "dataset/test/"+d) and d.split()[0] in has_no_multiple:
+        list_file = sorted([PROJECT_PATH + "dataset/test/"+d+"/"+f for f in os.listdir(PROJECT_PATH + "dataset/test/"+d)])
+        to_kept = int(len(list_file)/200)
+        for n in range(len(list_file)):
+            if n%to_kept!=0:
+                os.remove(list_file[n])
 # %%
