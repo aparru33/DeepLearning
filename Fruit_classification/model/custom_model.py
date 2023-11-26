@@ -1,9 +1,9 @@
-from keras.preprocessing import image_dataset_from_directory
-from keras.layers import Input, Conv2D, MaxPooling2D, Flatten, Dense, Dropout,BatchNormalization,Rescaling
-from keras.layers import LeakyReLU
-from keras import models
-from keras.metrics import Precision, Recall, AUC
-from keras.callbacks import EarlyStopping
+from tensorflow.keras.preprocessing import image_dataset_from_directory
+from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, Flatten, Dense, Dropout,BatchNormalization,Rescaling
+from tensorflow.keras.layers import LeakyReLU
+from tensorflow.keras import models
+from tensorflow.keras.metrics import Precision, Recall, AUC
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from sklearn.metrics import classification_report
 
 from datetime import datetime
@@ -70,24 +70,27 @@ def create_model_vg(_input_shape):
         MaxPooling2D((2, 2)),
         
         Flatten(),
-        Dense(1024),
+        Dense(2048),
         LeakyReLU(alpha=0.01),
-        Dense(1024),
+        Dense(2048),
         LeakyReLU(alpha=0.01),
         Dense(num_classes, activation="softmax")  # For binary classification
     ])
 
 # Set the path to your dataset
-TRAIN_DIR = '/home/ubuntu/workspace/finovox_main/dl_project/DeepLearning/Fruit_classification/dataset/train'
-VALIDATION_DIR = '/home/ubuntu/workspace/finovox_main/dl_project/DeepLearning/Fruit_classification/dataset/validation'
+TRAIN_DIR = '/home/ubuntu/workspace/finovox_main/dl_project/DeepLearning/Fruit_classification/dataset/final_dataset/train'
+VALIDATION_DIR = '/home/ubuntu/workspace/finovox_main/dl_project/DeepLearning/Fruit_classification/dataset/final_dataset/test'
 
 # Bilinear, bicubic, lanczos5, mitchellcubic.
 INTERPOLATION = "bicubic"
+PROJECT_PATH='/home/ubuntu/workspace/finovox_main/dl_project/DeepLearning/Fruit_classification/'
 
 IMAGE_CHANNELS=3
-batch_size = 256
-img_height = 100
-img_width = 100
+INPUT_SHAPE = (224,224,3)
+IMAGE_SIZE = (224,224)
+BATCH_SIZE = 256  
+img_height = 224
+img_width = 224
 
 
 try:
@@ -96,23 +99,19 @@ try:
 
     train_dataset = image_dataset_from_directory(
         TRAIN_DIR,
-        validation_split=0.2,
-        subset="training",
         seed=123,
-        image_size=(img_height, img_width),
-        batch_size=batch_size,
+        image_size=IMAGE_SIZE,
+        batch_size=BATCH_SIZE,
         label_mode='categorical',
         shuffle=True,
     )
     log.write("train datasets loaded\n")
     validation_dataset = image_dataset_from_directory(
         VALIDATION_DIR,
-        validation_split=0.2,
-        subset="validation",
         seed=123,
-        image_size=(img_height, img_width),
-        batch_size=batch_size,
-        label_mode='categorical'
+        image_size=IMAGE_SIZE,
+        batch_size=BATCH_SIZE,
+        label_mode='categorical',
     )
     log.write("validation datasets loaded\n")
     # Get number of classes
@@ -123,17 +122,22 @@ try:
     model = create_model((img_height, img_width, 3), num_classes)
     log.write("Model created\n")
     # Train the model
-    epochs = 10
+    epochs = 200
     log.write(f"Train the model with {epochs}\n")
-    epochs = 10
+    early_stopping = EarlyStopping(monitor='val_loss', patience=20)
+    model_checkpoint = ModelCheckpoint(filepath=PROJECT_PATH + 'model/saved_models/best_custom_model.h5', 
+                                       save_best_only=True, monitor='val_accuracy')
+
     model.fit(
-    train_dataset,
-    epochs=epochs
+        train_dataset,
+        epochs=epochs,
+        validation_data =validation_dataset,
+        callbacks=[ early_stopping, model_checkpoint]
     )
     log.write("Model trained\n")
 
     log.write("Save the model\n")
-    model.save('/home/ubuntu/workspace/finovox_main/dl_project/DeepLearning/Fruit_classification/model/model.h5')
+    model.save('model/custom_model.h5')
     log.write("Model saved\n")
     # Evaluate the model on the test dataset
     results = model.evaluate(validation_dataset)
