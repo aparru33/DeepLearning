@@ -122,7 +122,7 @@ try:
     model = create_model((img_height, img_width, 3), num_classes)
     log.write("Model created\n")
     # Train the model
-    epochs = 200
+    epochs = 10
     log.write(f"Train the model with {epochs}\n")
     early_stopping = EarlyStopping(monitor='val_loss', patience=20)
     model_checkpoint = ModelCheckpoint(filepath=PROJECT_PATH + 'model/saved_models/best_custom_model.h5', 

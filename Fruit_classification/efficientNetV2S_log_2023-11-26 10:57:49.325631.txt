@@ -1,0 +1,10 @@
+Load datasets
+Load datasets
+train datasets loaded
+ Load EfficientNetV2S
+Model saved
+Model evaluated
+loss 0.4883953332901001
+precision 0.8774588704109192
+
+Duration of training = 0:52:51.701309

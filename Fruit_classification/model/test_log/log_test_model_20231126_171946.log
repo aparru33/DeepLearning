@@ -1,0 +1,118 @@
+Start test 
+Get true labels and predicted labels 
+Get metrics for model simple_model.h5 
+                     precision    recall  f1-score   support
+
+        Class apple       0.34      0.10      0.16       200
+      Class apricot       0.42      0.29      0.35       200
+       Class banana       0.38      0.38      0.38       200
+     Class barberry       0.18      0.30      0.23       201
+  Class black_berry       0.61      0.78      0.68       200
+ Class black_cherry       0.53      0.25      0.34       197
+   Class brazil_nut       0.39      0.74      0.51       200
+       Class cashew       0.22      0.21      0.21       200
+       Class cherry       0.36      0.37      0.37       200
+   Class clementine       0.56      0.42      0.48       200
+      Class coconut       0.26      0.25      0.25       201
+  Class dragonfruit       0.60      0.23      0.33       199
+       Class durian       0.40      0.78      0.53       201
+          Class fig       0.54      0.35      0.43       200
+   Class grapefruit       0.19      0.35      0.24       199
+       Class jujube       0.25      0.28      0.26       200
+         Class kiwi       0.40      0.38      0.39       200
+         Class lime       0.39      0.38      0.39       201
+        Class mango       0.23      0.28      0.25       201
+        Class olive       0.32      0.38      0.34       200
+       Class orange       0.43      0.53      0.47       201
+       Class papaya       0.40      0.14      0.21       200
+Class passion_fruit       0.32      0.34      0.33       201
+    Class pineapple       0.42      0.39      0.41       200
+  Class pomegranate       0.28      0.24      0.26       200
+    Class raspberry       0.42      0.51      0.46       200
+ Class red_mulberry       0.39      0.49      0.43       200
+   Class strawberry       0.53      0.39      0.45       200
+       Class tomato       0.48      0.44      0.46       202
+   Class watermelon       0.59      0.49      0.54       200
+         Class yuzu       0.37      0.11      0.17       198
+
+           accuracy                           0.37      6202
+          macro avg       0.39      0.37      0.36      6202
+       weighted avg       0.39      0.37      0.36      6202
+
+Get metrics for model resnest_model_2023-11-24 23:08:27.409031.keras 
+                     precision    recall  f1-score   support
+
+        Class apple       0.42      0.48      0.45       200
+      Class apricot       0.61      0.59      0.60       200
+       Class banana       0.68      0.56      0.62       200
+     Class barberry       0.65      0.67      0.66       201
+  Class black_berry       0.83      0.80      0.82       200
+ Class black_cherry       0.62      0.53      0.57       197
+   Class brazil_nut       0.75      0.78      0.76       200
+       Class cashew       0.59      0.55      0.57       200
+       Class cherry       0.55      0.66      0.60       200
+   Class clementine       0.57      0.61      0.59       200
+      Class coconut       0.54      0.62      0.58       201
+  Class dragonfruit       0.79      0.64      0.71       199
+       Class durian       0.81      0.81      0.81       201
+          Class fig       0.78      0.71      0.74       200
+   Class grapefruit       0.32      0.33      0.32       199
+       Class jujube       0.54      0.57      0.56       200
+         Class kiwi       0.77      0.68      0.72       200
+         Class lime       0.57      0.65      0.61       201
+        Class mango       0.40      0.37      0.38       201
+        Class olive       0.63      0.62      0.63       200
+       Class orange       0.62      0.63      0.63       201
+       Class papaya       0.66      0.57      0.61       200
+Class passion_fruit       0.70      0.63      0.66       201
+    Class pineapple       0.67      0.66      0.66       200
+  Class pomegranate       0.48      0.55      0.51       200
+    Class raspberry       0.64      0.71      0.67       200
+ Class red_mulberry       0.64      0.71      0.67       200
+   Class strawberry       0.65      0.57      0.61       200
+       Class tomato       0.73      0.65      0.69       202
+   Class watermelon       0.78      0.78      0.78       200
+         Class yuzu       0.51      0.58      0.54       198
+
+           accuracy                           0.62      6202
+          macro avg       0.63      0.62      0.62      6202
+       weighted avg       0.63      0.62      0.62      6202
+
+Get metrics for model efficientNetV2S_model_2023-11-26 10:57:49.325627.keras 
+                     precision    recall  f1-score   support
+
+        Class apple       0.85      0.82      0.84       200
+      Class apricot       0.80      0.81      0.81       200
+       Class banana       0.98      0.98      0.98       200
+     Class barberry       0.94      0.91      0.92       201
+  Class black_berry       0.98      0.96      0.97       200
+ Class black_cherry       0.86      0.75      0.80       197
+   Class brazil_nut       0.90      0.96      0.93       200
+       Class cashew       0.95      0.94      0.95       200
+       Class cherry       0.68      0.83      0.75       200
+   Class clementine       0.76      0.81      0.79       200
+      Class coconut       0.89      0.91      0.90       201
+  Class dragonfruit       0.96      0.90      0.93       199
+       Class durian       1.00      1.00      1.00       201
+          Class fig       0.95      0.97      0.96       200
+   Class grapefruit       0.70      0.69      0.70       199
+       Class jujube       0.79      0.76      0.77       200
+         Class kiwi       0.97      0.85      0.90       200
+         Class lime       0.75      0.84      0.79       201
+        Class mango       0.83      0.78      0.80       201
+        Class olive       0.85      0.88      0.86       200
+       Class orange       0.66      0.74      0.70       201
+       Class papaya       0.93      0.82      0.87       200
+Class passion_fruit       0.97      0.88      0.92       201
+    Class pineapple       0.98      0.95      0.97       200
+  Class pomegranate       0.89      0.94      0.91       200
+    Class raspberry       0.92      0.93      0.92       200
+ Class red_mulberry       0.88      0.94      0.91       200
+   Class strawberry       0.97      0.91      0.94       200
+       Class tomato       0.93      0.90      0.92       202
+   Class watermelon       0.98      0.98      0.98       200
+         Class yuzu       0.83      0.83      0.83       198
+
+           accuracy                           0.88      6202
+          macro avg       0.88      0.88      0.88      6202
+       weighted avg       0.88      0.88      0.88      6202

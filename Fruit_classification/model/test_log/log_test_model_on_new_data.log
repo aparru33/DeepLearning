@@ -1,0 +1,1030 @@
+Start test 
+Get true labels and predicted labels 
+list of categpry : ['apple', 'apricot', 'banana', 'barberry', 'black_berry', 'black_cherry', 'brazil_nut', 'cashew', 'cherry', 'clementine', 'coconut', 'dragonfruit', 'durian', 'fig', 'grapefruit', 'jujube', 'kiwi', 'lime', 'mango', 'olive', 'orange', 'papaya', 'passion_fruit', 'pineapple', 'pomegranate', 'raspberry', 'red_mulberry', 'strawberry', 'tomato', 'watermelon', 'yuzu'] 
+raspberries5.jpg
+best_custom_model.h5prediction time is 79994 microseconds 
+the top 3 fruits are :
+pomegranate, raspberry, dragonfruit 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 218457 microseconds 
+the top 3 fruits are :
+banana, raspberry, dragonfruit 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 855366 microseconds 
+the top 3 fruits are :
+black_berry, strawberry, raspberry 
+
+cherries_wax5.jpg
+best_custom_model.h5prediction time is 50620 microseconds 
+the top 3 fruits are :
+coconut, pineapple, pomegranate 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52670 microseconds 
+the top 3 fruits are :
+grapefruit, clementine, pomegranate 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89577 microseconds 
+the top 3 fruits are :
+apricot, pomegranate, barberry 
+
+apples2.jpg
+best_custom_model.h5prediction time is 49264 microseconds 
+the top 3 fruits are :
+orange, coconut, grapefruit 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52023 microseconds 
+the top 3 fruits are :
+yuzu, tomato, pomegranate 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89294 microseconds 
+the top 3 fruits are :
+olive, lime, grapefruit 
+
+apples_peaches2.jpg
+best_custom_model.h5prediction time is 49107 microseconds 
+the top 3 fruits are :
+brazil_nut, passion_fruit, jujube 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50675 microseconds 
+the top 3 fruits are :
+mango, jujube, apple 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 93329 microseconds 
+the top 3 fruits are :
+fig, apple, jujube 
+
+cherry_strawberries2.jpg
+best_custom_model.h5prediction time is 49954 microseconds 
+the top 3 fruits are :
+watermelon, tomato, strawberry 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52391 microseconds 
+the top 3 fruits are :
+tomato, barberry, strawberry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89771 microseconds 
+the top 3 fruits are :
+raspberry, tomato, cherry 
+
+Bananas(lady_finger)2.jpg
+best_custom_model.h5prediction time is 48718 microseconds 
+the top 3 fruits are :
+grapefruit, yuzu, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52074 microseconds 
+the top 3 fruits are :
+mango, apple, banana 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88968 microseconds 
+the top 3 fruits are :
+papaya, mango, banana 
+
+mangos2.jpg
+best_custom_model.h5prediction time is 48678 microseconds 
+the top 3 fruits are :
+mango, brazil_nut, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51608 microseconds 
+the top 3 fruits are :
+brazil_nut, watermelon, kiwi 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88412 microseconds 
+the top 3 fruits are :
+jujube, coconut, mango 
+
+cherries_strawberries1.jpg
+best_custom_model.h5prediction time is 54360 microseconds 
+the top 3 fruits are :
+dragonfruit, tomato, strawberry 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52890 microseconds 
+the top 3 fruits are :
+strawberry, barberry, tomato 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 90278 microseconds 
+the top 3 fruits are :
+cashew, tomato, cherry 
+
+cherries_wax7.jpg
+best_custom_model.h5prediction time is 49727 microseconds 
+the top 3 fruits are :
+passion_fruit, apple, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51819 microseconds 
+the top 3 fruits are :
+passion_fruit, cherry, banana 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 91431 microseconds 
+the top 3 fruits are :
+jujube, cherry, olive 
+
+plums_pears.jpg
+best_custom_model.h5prediction time is 48464 microseconds 
+the top 3 fruits are :
+pomegranate, black_berry, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52793 microseconds 
+the top 3 fruits are :
+dragonfruit, black_berry, pineapple 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88207 microseconds 
+the top 3 fruits are :
+olive, mango, jujube 
+
+strawberries3.jpg
+best_custom_model.h5prediction time is 54493 microseconds 
+the top 3 fruits are :
+coconut, grapefruit, clementine 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52267 microseconds 
+the top 3 fruits are :
+barberry, clementine, strawberry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88480 microseconds 
+the top 3 fruits are :
+red_mulberry, tomato, strawberry 
+
+tomatoes3.jpg
+best_custom_model.h5prediction time is 49143 microseconds 
+the top 3 fruits are :
+pineapple, coconut, brazil_nut 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51915 microseconds 
+the top 3 fruits are :
+clementine, pomegranate, barberry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89119 microseconds 
+the top 3 fruits are :
+cherry, pomegranate, tomato 
+
+raspberry5.jpg
+best_custom_model.h5prediction time is 48316 microseconds 
+the top 3 fruits are :
+dragonfruit, raspberry, strawberry 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52963 microseconds 
+the top 3 fruits are :
+pomegranate, raspberry, dragonfruit 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 90388 microseconds 
+the top 3 fruits are :
+strawberry, red_mulberry, raspberry 
+
+cherries_wax1.jpg
+best_custom_model.h5prediction time is 48414 microseconds 
+the top 3 fruits are :
+apple, mango, passion_fruit 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 55919 microseconds 
+the top 3 fruits are :
+banana, jujube, passion_fruit 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 90296 microseconds 
+the top 3 fruits are :
+cherry, jujube, olive 
+
+raspberries4.jpg
+best_custom_model.h5prediction time is 49629 microseconds 
+the top 3 fruits are :
+jujube, barberry, olive 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52836 microseconds 
+the top 3 fruits are :
+dragonfruit, black_cherry, pineapple 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87560 microseconds 
+the top 3 fruits are :
+barberry, cherry, red_mulberry 
+
+raspberries7.jpg
+best_custom_model.h5prediction time is 48700 microseconds 
+the top 3 fruits are :
+pomegranate, raspberry, dragonfruit 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52370 microseconds 
+the top 3 fruits are :
+strawberry, raspberry, dragonfruit 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89078 microseconds 
+the top 3 fruits are :
+red_mulberry, strawberry, raspberry 
+
+apples4.jpg
+best_custom_model.h5prediction time is 48023 microseconds 
+the top 3 fruits are :
+mango, papaya, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 56674 microseconds 
+the top 3 fruits are :
+dragonfruit, kiwi, pineapple 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89195 microseconds 
+the top 3 fruits are :
+barberry, pomegranate, tomato 
+
+apples1.jpg
+best_custom_model.h5prediction time is 49318 microseconds 
+the top 3 fruits are :
+pomegranate, mango, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51706 microseconds 
+the top 3 fruits are :
+yuzu, apple, black_berry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88539 microseconds 
+the top 3 fruits are :
+mango, apple, apricot 
+
+raspberries1.jpg
+best_custom_model.h5prediction time is 50216 microseconds 
+the top 3 fruits are :
+tomato, grapefruit, red_mulberry 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50758 microseconds 
+the top 3 fruits are :
+kiwi, red_mulberry, pomegranate 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88850 microseconds 
+the top 3 fruits are :
+cherry, tomato, red_mulberry 
+
+cherries8.jpg
+best_custom_model.h5prediction time is 48357 microseconds 
+the top 3 fruits are :
+raspberry, pomegranate, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51108 microseconds 
+the top 3 fruits are :
+pomegranate, tomato, barberry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 94288 microseconds 
+the top 3 fruits are :
+cherry, red_mulberry, barberry 
+
+raspberries10.jpg
+best_custom_model.h5prediction time is 48515 microseconds 
+the top 3 fruits are :
+mango, watermelon, durian 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52784 microseconds 
+the top 3 fruits are :
+kiwi, red_mulberry, black_cherry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88973 microseconds 
+the top 3 fruits are :
+cherry, barberry, red_mulberry 
+
+cherry_strawberries.jpg
+best_custom_model.h5prediction time is 49489 microseconds 
+the top 3 fruits are :
+dragonfruit, tomato, strawberry 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52192 microseconds 
+the top 3 fruits are :
+strawberry, barberry, tomato 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89716 microseconds 
+the top 3 fruits are :
+cashew, tomato, cherry 
+
+raspberries12.jpg
+best_custom_model.h5prediction time is 49326 microseconds 
+the top 3 fruits are :
+jujube, grapefruit, pomegranate 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51588 microseconds 
+the top 3 fruits are :
+red_mulberry, raspberry, strawberry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 93150 microseconds 
+the top 3 fruits are :
+cherry, red_mulberry, raspberry 
+
+cherries_strawberries2.jpg
+best_custom_model.h5prediction time is 50137 microseconds 
+the top 3 fruits are :
+watermelon, tomato, strawberry 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51805 microseconds 
+the top 3 fruits are :
+tomato, barberry, strawberry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87899 microseconds 
+the top 3 fruits are :
+raspberry, tomato, cherry 
+
+raspberry_apple.jpg
+best_custom_model.h5prediction time is 49740 microseconds 
+the top 3 fruits are :
+grapefruit, pomegranate, coconut 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52200 microseconds 
+the top 3 fruits are :
+dragonfruit, pomegranate, black_cherry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89334 microseconds 
+the top 3 fruits are :
+raspberry, tomato, red_mulberry 
+
+cherries6.jpg
+best_custom_model.h5prediction time is 48844 microseconds 
+the top 3 fruits are :
+clementine, pomegranate, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50590 microseconds 
+the top 3 fruits are :
+black_cherry, pomegranate, tomato 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 90068 microseconds 
+the top 3 fruits are :
+dragonfruit, barberry, cherry 
+
+cherries(rainier)2.jpg
+best_custom_model.h5prediction time is 53578 microseconds 
+the top 3 fruits are :
+mango, pineapple, orange 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51688 microseconds 
+the top 3 fruits are :
+clementine, apricot, mango 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88667 microseconds 
+the top 3 fruits are :
+orange, barberry, grapefruit 
+
+tomatoes1.jpg
+best_custom_model.h5prediction time is 49000 microseconds 
+the top 3 fruits are :
+orange, papaya, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51021 microseconds 
+the top 3 fruits are :
+papaya, apricot, tomato 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88746 microseconds 
+the top 3 fruits are :
+clementine, orange, tomato 
+
+raspberry3.jpg
+best_custom_model.h5prediction time is 48553 microseconds 
+the top 3 fruits are :
+jujube, barberry, olive 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50961 microseconds 
+the top 3 fruits are :
+dragonfruit, black_cherry, pineapple 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88198 microseconds 
+the top 3 fruits are :
+barberry, cherry, red_mulberry 
+
+apple_pear.jpg
+best_custom_model.h5prediction time is 47734 microseconds 
+the top 3 fruits are :
+barberry, pomegranate, cherry 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 55687 microseconds 
+the top 3 fruits are :
+strawberry, cherry, tomato 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87792 microseconds 
+the top 3 fruits are :
+pomegranate, mango, apple 
+
+raspberries9.jpg
+best_custom_model.h5prediction time is 48688 microseconds 
+the top 3 fruits are :
+dragonfruit, raspberry, pomegranate 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51586 microseconds 
+the top 3 fruits are :
+jujube, raspberry, pomegranate 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87973 microseconds 
+the top 3 fruits are :
+jujube, red_mulberry, raspberry 
+
+apples_pears.jpg
+best_custom_model.h5prediction time is 47860 microseconds 
+the top 3 fruits are :
+olive, banana, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51364 microseconds 
+the top 3 fruits are :
+apple, kiwi, banana 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87554 microseconds 
+the top 3 fruits are :
+apple, lime, jujube 
+
+apple_grape.jpg
+best_custom_model.h5prediction time is 48982 microseconds 
+the top 3 fruits are :
+orange, watermelon, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 54636 microseconds 
+the top 3 fruits are :
+cashew, mango, banana 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 90843 microseconds 
+the top 3 fruits are :
+mango, jujube, apple 
+
+raspberries2.jpg
+best_custom_model.h5prediction time is 48727 microseconds 
+the top 3 fruits are :
+coconut, jujube, durian 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52031 microseconds 
+the top 3 fruits are :
+black_cherry, barberry, olive 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87893 microseconds 
+the top 3 fruits are :
+tomato, cherry, red_mulberry 
+
+raspberries6.jpg
+best_custom_model.h5prediction time is 48336 microseconds 
+the top 3 fruits are :
+mango, dragonfruit, fig 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51232 microseconds 
+the top 3 fruits are :
+lime, dragonfruit, strawberry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 90097 microseconds 
+the top 3 fruits are :
+apricot, tomato, raspberry 
+
+apple.jpg
+best_custom_model.h5prediction time is 47551 microseconds 
+the top 3 fruits are :
+kiwi, mango, banana 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50368 microseconds 
+the top 3 fruits are :
+apple, jujube, banana 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 93532 microseconds 
+the top 3 fruits are :
+tomato, jujube, apple 
+
+pomegranate2.jpg
+best_custom_model.h5prediction time is 48371 microseconds 
+the top 3 fruits are :
+tomato, barberry, orange 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52270 microseconds 
+the top 3 fruits are :
+orange, tomato, clementine 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89646 microseconds 
+the top 3 fruits are :
+clementine, mango, pomegranate 
+
+raspberry2.jpg
+best_custom_model.h5prediction time is 48063 microseconds 
+the top 3 fruits are :
+pomegranate, jujube, coconut 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51483 microseconds 
+the top 3 fruits are :
+barberry, dragonfruit, pomegranate 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87713 microseconds 
+the top 3 fruits are :
+barberry, cherry, red_mulberry 
+
+raspberries8.jpg
+best_custom_model.h5prediction time is 48159 microseconds 
+the top 3 fruits are :
+dragonfruit, raspberry, strawberry 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50638 microseconds 
+the top 3 fruits are :
+pomegranate, raspberry, dragonfruit 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 94433 microseconds 
+the top 3 fruits are :
+strawberry, red_mulberry, raspberry 
+
+Bananas(lady_finger)1.jpg
+best_custom_model.h5prediction time is 48762 microseconds 
+the top 3 fruits are :
+yuzu, banana, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52111 microseconds 
+the top 3 fruits are :
+passion_fruit, olive, banana 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 90521 microseconds 
+the top 3 fruits are :
+mango, papaya, banana 
+
+cherries(rainier)1.jpg
+best_custom_model.h5prediction time is 49978 microseconds 
+the top 3 fruits are :
+barberry, cashew, tomato 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51891 microseconds 
+the top 3 fruits are :
+banana, papaya, cashew 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89430 microseconds 
+the top 3 fruits are :
+jujube, cherry, tomato 
+
+cherries.jpg
+best_custom_model.h5prediction time is 48229 microseconds 
+the top 3 fruits are :
+black_cherry, pineapple, black_berry 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51265 microseconds 
+the top 3 fruits are :
+pineapple, grapefruit, orange 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88850 microseconds 
+the top 3 fruits are :
+pomegranate, kiwi, olive 
+
+apple_grape2.jpg
+best_custom_model.h5prediction time is 53632 microseconds 
+the top 3 fruits are :
+kiwi, banana, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50684 microseconds 
+the top 3 fruits are :
+passion_fruit, mango, banana 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 90171 microseconds 
+the top 3 fruits are :
+clementine, apple, jujube 
+
+cherries2.jpg
+best_custom_model.h5prediction time is 49047 microseconds 
+the top 3 fruits are :
+pomegranate, mango, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51938 microseconds 
+the top 3 fruits are :
+pomegranate, tomato, black_cherry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89313 microseconds 
+the top 3 fruits are :
+cherry, barberry, red_mulberry 
+
+cherries3.jpg
+best_custom_model.h5prediction time is 49331 microseconds 
+the top 3 fruits are :
+durian, black_cherry, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51544 microseconds 
+the top 3 fruits are :
+grapefruit, yuzu, tomato 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 90901 microseconds 
+the top 3 fruits are :
+dragonfruit, barberry, cherry 
+
+tomatoes2.jpg
+best_custom_model.h5prediction time is 46782 microseconds 
+the top 3 fruits are :
+grapefruit, mango, coconut 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 55156 microseconds 
+the top 3 fruits are :
+tomato, black_cherry, clementine 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89600 microseconds 
+the top 3 fruits are :
+pomegranate, clementine, tomato 
+
+limes.jpg
+best_custom_model.h5prediction time is 47190 microseconds 
+the top 3 fruits are :
+banana, apple, lime 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50226 microseconds 
+the top 3 fruits are :
+grapefruit, lime, banana 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88305 microseconds 
+the top 3 fruits are :
+apple, jujube, lime 
+
+mangos3.jpg
+best_custom_model.h5prediction time is 47443 microseconds 
+the top 3 fruits are :
+fig, coconut, brazil_nut 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 49227 microseconds 
+the top 3 fruits are :
+passion_fruit, coconut, fig 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 86396 microseconds 
+the top 3 fruits are :
+watermelon, coconut, mango 
+
+cherries_wax4.jpg
+best_custom_model.h5prediction time is 47414 microseconds 
+the top 3 fruits are :
+orange, durian, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 54232 microseconds 
+the top 3 fruits are :
+barberry, orange, clementine 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88233 microseconds 
+the top 3 fruits are :
+cherry, apricot, clementine 
+
+kiwi.jpg
+best_custom_model.h5prediction time is 48646 microseconds 
+the top 3 fruits are :
+coconut, grapefruit, kiwi 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51656 microseconds 
+the top 3 fruits are :
+olive, yuzu, grapefruit 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 86450 microseconds 
+the top 3 fruits are :
+kiwi, mango, clementine 
+
+cherries5.jpg
+best_custom_model.h5prediction time is 48780 microseconds 
+the top 3 fruits are :
+pomegranate, black_cherry, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50100 microseconds 
+the top 3 fruits are :
+apricot, black_cherry, tomato 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87208 microseconds 
+the top 3 fruits are :
+barberry, red_mulberry, cherry 
+
+cocos.jpg
+best_custom_model.h5prediction time is 48452 microseconds 
+the top 3 fruits are :
+pineapple, brazil_nut, coconut 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51114 microseconds 
+the top 3 fruits are :
+banana, coconut, kiwi 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 91304 microseconds 
+the top 3 fruits are :
+clementine, kiwi, coconut 
+
+lychee.jpg
+best_custom_model.h5prediction time is 47377 microseconds 
+the top 3 fruits are :
+jujube, coconut, brazil_nut 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51869 microseconds 
+the top 3 fruits are :
+banana, apple, brazil_nut 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87304 microseconds 
+the top 3 fruits are :
+jujube, raspberry, strawberry 
+
+tomatoes4.jpg
+best_custom_model.h5prediction time is 48031 microseconds 
+the top 3 fruits are :
+barberry, coconut, grapefruit 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50219 microseconds 
+the top 3 fruits are :
+pomegranate, barberry, tomato 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89265 microseconds 
+the top 3 fruits are :
+cashew, pomegranate, tomato 
+
+cherries_wax2.jpg
+best_custom_model.h5prediction time is 48538 microseconds 
+the top 3 fruits are :
+apricot, pineapple, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50203 microseconds 
+the top 3 fruits are :
+mango, pineapple, raspberry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87467 microseconds 
+the top 3 fruits are :
+red_mulberry, pomegranate, barberry 
+
+cherries7.jpg
+best_custom_model.h5prediction time is 52584 microseconds 
+the top 3 fruits are :
+strawberry, pineapple, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51079 microseconds 
+the top 3 fruits are :
+pomegranate, tomato, barberry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 90625 microseconds 
+the top 3 fruits are :
+barberry, pomegranate, cherry 
+
+mangos_bananas(lady_finger).jpg
+best_custom_model.h5prediction time is 49110 microseconds 
+the top 3 fruits are :
+orange, grapefruit, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50785 microseconds 
+the top 3 fruits are :
+yuzu, kiwi, mango 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87692 microseconds 
+the top 3 fruits are :
+lime, mango, banana 
+
+tomatoes5.jpg
+best_custom_model.h5prediction time is 48669 microseconds 
+the top 3 fruits are :
+pineapple, olive, durian 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50685 microseconds 
+the top 3 fruits are :
+pomegranate, olive, pineapple 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 86167 microseconds 
+the top 3 fruits are :
+clementine, pomegranate, tomato 
+
+strawberries2.jpg
+best_custom_model.h5prediction time is 52030 microseconds 
+the top 3 fruits are :
+olive, papaya, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51232 microseconds 
+the top 3 fruits are :
+dragonfruit, strawberry, pineapple 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87669 microseconds 
+the top 3 fruits are :
+raspberry, strawberry, tomato 
+
+raspberry4.jpg
+best_custom_model.h5prediction time is 48298 microseconds 
+the top 3 fruits are :
+mango, dragonfruit, fig 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50981 microseconds 
+the top 3 fruits are :
+lime, dragonfruit, strawberry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87189 microseconds 
+the top 3 fruits are :
+apricot, tomato, raspberry 
+
+apples_peaches1.jpg
+best_custom_model.h5prediction time is 48029 microseconds 
+the top 3 fruits are :
+strawberry, pomegranate, jujube 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52402 microseconds 
+the top 3 fruits are :
+apple, jujube, black_cherry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88125 microseconds 
+the top 3 fruits are :
+fig, apple, jujube 
+
+cherry3.jpg
+best_custom_model.h5prediction time is 47420 microseconds 
+the top 3 fruits are :
+strawberry, pineapple, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 56414 microseconds 
+the top 3 fruits are :
+pomegranate, tomato, barberry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87461 microseconds 
+the top 3 fruits are :
+barberry, pomegranate, cherry 
+
+mangos1.jpg
+best_custom_model.h5prediction time is 48382 microseconds 
+the top 3 fruits are :
+lime, brazil_nut, olive 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50144 microseconds 
+the top 3 fruits are :
+olive, grapefruit, lime 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89936 microseconds 
+the top 3 fruits are :
+passion_fruit, mango, lime 
+
+cherries_wax3.jpg
+best_custom_model.h5prediction time is 49116 microseconds 
+the top 3 fruits are :
+orange, mango, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51496 microseconds 
+the top 3 fruits are :
+pomegranate, orange, pineapple 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88547 microseconds 
+the top 3 fruits are :
+clementine, pomegranate, barberry 
+
+cherries4.jpg
+best_custom_model.h5prediction time is 48662 microseconds 
+the top 3 fruits are :
+pomegranate, pineapple, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 56122 microseconds 
+the top 3 fruits are :
+apricot, cherry, tomato 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 90643 microseconds 
+the top 3 fruits are :
+pomegranate, tomato, dragonfruit 
+
+Bananas(lady_finger)5.jpg
+best_custom_model.h5prediction time is 49200 microseconds 
+the top 3 fruits are :
+orange, banana, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51584 microseconds 
+the top 3 fruits are :
+mango, kiwi, banana 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87791 microseconds 
+the top 3 fruits are :
+mango, papaya, banana 
+
+raspberries3.jpg
+best_custom_model.h5prediction time is 49443 microseconds 
+the top 3 fruits are :
+pomegranate, jujube, coconut 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51430 microseconds 
+the top 3 fruits are :
+barberry, dragonfruit, pomegranate 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88969 microseconds 
+the top 3 fruits are :
+barberry, cherry, red_mulberry 
+
+pomegranate.jpg
+best_custom_model.h5prediction time is 47197 microseconds 
+the top 3 fruits are :
+apple, pomegranate, tomato 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 49503 microseconds 
+the top 3 fruits are :
+banana, apricot, pomegranate 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 96928 microseconds 
+the top 3 fruits are :
+mango, dragonfruit, pomegranate 
+
+strawberries4.jpg
+best_custom_model.h5prediction time is 48925 microseconds 
+the top 3 fruits are :
+raspberry, pomegranate, strawberry 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51792 microseconds 
+the top 3 fruits are :
+tomato, pomegranate, strawberry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 90186 microseconds 
+the top 3 fruits are :
+black_berry, strawberry, raspberry 
+
+raspberry.jpg
+best_custom_model.h5prediction time is 47658 microseconds 
+the top 3 fruits are :
+raspberry, barberry, jujube 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 49831 microseconds 
+the top 3 fruits are :
+strawberry, raspberry, dragonfruit 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87686 microseconds 
+the top 3 fruits are :
+apple, strawberry, raspberry 
+
+mango.jpg
+best_custom_model.h5prediction time is 47166 microseconds 
+the top 3 fruits are :
+kiwi, apple, apricot 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50150 microseconds 
+the top 3 fruits are :
+mango, grapefruit, apple 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 87210 microseconds 
+the top 3 fruits are :
+grapefruit, lime, mango 
+
+Bananas(lady_finger)3.jpg
+best_custom_model.h5prediction time is 52513 microseconds 
+the top 3 fruits are :
+banana, yuzu, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50413 microseconds 
+the top 3 fruits are :
+olive, banana, papaya 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88493 microseconds 
+the top 3 fruits are :
+mango, papaya, banana 
+
+strawberries.jpg
+best_custom_model.h5prediction time is 48874 microseconds 
+the top 3 fruits are :
+pineapple, coconut, durian 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51794 microseconds 
+the top 3 fruits are :
+coconut, clementine, durian 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88211 microseconds 
+the top 3 fruits are :
+red_mulberry, tomato, strawberry 
+
+apples3.jpg
+best_custom_model.h5prediction time is 48098 microseconds 
+the top 3 fruits are :
+pomegranate, mango, pineapple 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51467 microseconds 
+the top 3 fruits are :
+dragonfruit, pomegranate, pineapple 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 91032 microseconds 
+the top 3 fruits are :
+cashew, cherry, tomato 
+
+raspberries11.jpg
+best_custom_model.h5prediction time is 52062 microseconds 
+the top 3 fruits are :
+pomegranate, strawberry, raspberry 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51036 microseconds 
+the top 3 fruits are :
+tomato, raspberry, dragonfruit 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89207 microseconds 
+the top 3 fruits are :
+barberry, black_cherry, dragonfruit 
+
+Bananas(lady_finger)4.jpg
+best_custom_model.h5prediction time is 48612 microseconds 
+the top 3 fruits are :
+passion_fruit, olive, mango 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 52286 microseconds 
+the top 3 fruits are :
+banana, olive, mango 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 88488 microseconds 
+the top 3 fruits are :
+papaya, mango, banana 
+
+strawberries5.jpg
+best_custom_model.h5prediction time is 48175 microseconds 
+the top 3 fruits are :
+strawberry, tomato, raspberry 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 50840 microseconds 
+the top 3 fruits are :
+pomegranate, tomato, strawberry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89605 microseconds 
+the top 3 fruits are :
+barberry, cherry, dragonfruit 
+
+cherries_wax6.jpg
+best_custom_model.h5prediction time is 47641 microseconds 
+the top 3 fruits are :
+clementine, coconut, grapefruit 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 55591 microseconds 
+the top 3 fruits are :
+barberry, red_mulberry, black_cherry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 90084 microseconds 
+the top 3 fruits are :
+jujube, pomegranate, cherry 
+
+cherry2.jpg
+best_custom_model.h5prediction time is 48541 microseconds 
+the top 3 fruits are :
+black_cherry, olive, black_berry 
+
+resnest_model_2023-11-24 23:08:27.409031.keras prediction time is 51638 microseconds 
+the top 3 fruits are :
+olive, papaya, black_berry 
+
+efficientNetV2S_model_2023-11-26 10:57:49.325627.keras prediction time is 89574 microseconds 
+the top 3 fruits are :
+black_cherry, cherry, olive 
+
